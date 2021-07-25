@@ -362,9 +362,9 @@
 	cursor: pointer;
 }
 .back{
-	    position: fixed;
+	position: fixed;
     bottom: 100px;
-    right: 10px;
+    right: 20px;
     width: 55px;
     height: 35px;
     color: #085fff;

@@ -8,7 +8,7 @@ function Description () {
 	const { idParams } = useParams(); //get id url
 	const getID = parseInt(idParams); //convert string idParams to number
 	const item = Data.find(item => item.id === getID);
-
+	
 	const detail_img = {
 		width: "100%",
 		height: "auto",
@@ -19,7 +19,7 @@ function Description () {
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		const loadData = async () => {
-		  await new Promise((r) => setTimeout(r, 500));
+		  await new Promise((r) => setTimeout(r, 1000));
 		  setLoading((loading) => !loading);
 		};
 		return(loadData());
